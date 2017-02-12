@@ -32,9 +32,11 @@ for i in range(5):
         print( "        " + str(weights[j][i]), end = "")
 
 features = []
-questions = ["How many legs does it have?", "Does it live in water?", "Can it fly?", "Does it have feathers?", "Does it lay eggs?"]
+questions = ["How many legs does it have?", "Does it live in water?", "Can it fly?",
+             "Does it have feathers?", "Does it lay eggs?"]
 print("\nEnter features of your animal:")
-print("If you want to answet the question \"yes\", write 1, if \"no\", write -1, if you are not sure, write a number between -1 and 1")
+print("If you want to answet the question \"yes\", write 1, if \"no\", write -1, "
+      "if you are not sure, write a number between -1 and 1")
 for i in range(5):
     print(questions[i])
     features.append(float(input()))
@@ -47,9 +49,9 @@ for i in range(5):
     bird += weights[1][i] * features[i]
     fish += weights[2][i] * features[i]
 
-if(mammal > bird and mammal > fish and mammal > 2):
+if mammal > bird and mammal > fish and mammal > 2:
     print("It is a mammal")
-if(bird > mammal and bird > fish and bird > 2):
+if bird > mammal and bird > fish and bird > 2:
     print("It is a bird")
-if(fish > mammal and fish > bird and fish > 2):
+if fish > mammal and fish > bird and fish > 2:
     print("It is a fish")
