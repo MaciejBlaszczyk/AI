@@ -36,7 +36,7 @@ questions = ["How many legs does it have?", "Does it live in water?", "Can it fl
              "Does it have feathers?", "Does it lay eggs?"]
 print("\nEnter features of your animal:")
 print("If you want to answet the question \"yes\", write 1, if \"no\", write -1, "
-      "if you are not sure, write a number between -1 and 1")
+      "if you are not sure, write a number between -1 and 1 ")
 for i in range(5):
     print(questions[i])
     features.append(float(input()))
@@ -55,3 +55,4 @@ if bird > mammal and bird > fish and bird > 2:
     print("It is a bird")
 if fish > mammal and fish > bird and fish > 2:
     print("It is a fish")
+
