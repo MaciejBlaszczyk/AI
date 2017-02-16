@@ -2,7 +2,7 @@
 
 #NeuralNetwork02: 
 
-Simple linear neural network which contains 3 neurons.
+Simple linear neural network which contains 3 neurons, 5 inputs and 1 output each.
 
 It tries to recognize whether animal is a mammal, a fish or a bird.
 
@@ -17,3 +17,11 @@ Input features are :
 - has animal feathers?
 
 - does animal lay eggs?
+
+#Neuralnetwork03:
+
+Simple linear neural network built from 1 neuron with 5 inputs and 1 output.
+
+We are trying to teach it to recognize specified elements.
+
+Program shows step by step how error is decreasing during learning.
