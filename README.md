@@ -18,7 +18,7 @@ Input features are :
 
 - does animal lay eggs?
 
-#Neuralnetwork03:
+#NeuralNetwork03:
 
 Simple linear neural network built from 1 neuron with 5 inputs and 1 output.
 
