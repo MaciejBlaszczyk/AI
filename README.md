@@ -25,3 +25,7 @@ Simple linear neural network built from 1 neuron with 5 inputs and 1 output.
 We are trying to teach it to recognize specified elements.
 
 Program shows step by step how error is decreasing during learning.
+
+#NeuralNetwork04:
+
+Similar network to 03 one, but with 3 neurons, 5 inputs and 3 outputs each.
