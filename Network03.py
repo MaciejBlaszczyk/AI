@@ -3,7 +3,7 @@ from random import random
 
 
 def normalize(signals):
-    """Normalize list of signals (Euclidean norm)"""
+    """Normalize list of signals (Euclidean norm)."""
     strength = 0
     for signal in signals:
         strength += signal * signal
@@ -13,26 +13,26 @@ def normalize(signals):
 
 
 class Neuron:
-    """artificial neuron - every example has its own weights which change in every learning step"""
+    """Artificial neuron - every example has its own weights which change in every learning step."""
 
     def __init__(self):
         self.weights = []
 
     def randomize(self, min, max, inputCount):
-        """Set neuron weights to random numbers between min and max"""
+        """Set neuron weights to random numbers between min and max."""
         length = max - min
         for i in range(inputCount):
             self.weights.append(min + length * random())
 
     def learn(self, signals, expectedOutput, ratio, previousResponse, previousError):
-        """Set neuron weights depending on ratio, previous error and input signals"""
+        """Set neuron weights depending on ratio, previous error and input signals."""
         previousResponse[0] = self.response(signals)
         previousError[0] = expectedOutput - previousResponse[0]
         for i in range(len(self.weights)):
             self.weights[i] += ratio * previousError[0] * signals[i]
 
     def response(self, signals):
-        """return neuron's response (sum of multiplied weights and input signals)"""
+        """Return neuron's response (sum of multiplied weights and input signals)."""
         result = 0.
         for signal, weight in zip(signals, self.weights):
             result += signal * weight
@@ -40,7 +40,7 @@ class Neuron:
 
 
 class Element:
-    """single element of the teaching set, consists of: list of inputs, expected output, comment"""
+    """Single element of the teaching set, consists of: list of inputs, expected output, comment."""
 
     def __init__(self, inputs, expectedOutput, comment):
         self.inputs = inputs
@@ -48,7 +48,7 @@ class Element:
         self.comment = comment
 
     def clone(self):
-        """return cloned element"""
+        """Return cloned element."""
         elem = Element()
         elem.inputs = self.inputs
         elem.expectedOutput = self.expectedOutput
@@ -61,7 +61,7 @@ class Element:
 
 
 class TeachingSet:
-    """teaching set, consist of elements list, number of inputs and outputs in every element"""
+    """Teaching set, consist of elements list, number of inputs and outputs in every element."""
 
     def __init__(self, inputCount, outputCount):
         self.inputCount = inputCount
@@ -81,7 +81,7 @@ class TeachingSet:
 
 
 class ProgramLogic:
-    """main logic of the network"""
+    """Main logic of the network."""
 
     def __init__(self, teachingSet, neuron):
         self.teachingSet = teachingSet
@@ -96,9 +96,9 @@ class ProgramLogic:
         self.history = []
 
     def performTeaching(self, teachingRatio):
-        """conduct teaching neuron.
-        go element by element in the teaching set and teach neuron how to behave
-        by the way create history of errors during learning
+        """Conduct teaching neuron.
+        Go element by element in the teaching set and teach neuron how to behave.
+        By the way create history of errors during learning.
         """
 
         if self.currentElementIndex >= self.teachingSet.count():
