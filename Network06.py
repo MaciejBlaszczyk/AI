@@ -1,25 +1,153 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from math import sqrt
 from random import random
 
-#x = np.array([1,2,3,4,10])
 
+def plotting():
 
-#plt.plot(x, '.')
-#plt.show()
+    global pl
+
+    fig = plt.figure()
+
+    for i in range(5):
+        pl.performTeaching()
+    draw1 = fig.add_subplot(331)
+    for i in np.arange(-1, 1.08, 0.08):
+        for j in np.arange(-1, 1.08, 0.08):
+            if pl.test([i, j]) > 0:
+                color = 'ro'
+            else:
+                color = 'bo'
+            draw1.plot(i, j, color)
+    draw1.plot([0.4, 0.4, 0.5, 0.5, 0.04], [0.4, 0.5, 0.4, 0.5, 0.04], 'ko')
+    draw1.plot([-0.4, -0.4, -0.5, -0.5, -0.04], [-0.4, -0.5, -0.4, -0.5, -0.04], 'wo')
+    draw1.axis([-1, 1, -1, 1])
+
+    for i in range(5):
+        pl.performTeaching()
+    draw2 = fig.add_subplot(332)
+    for i in np.arange(-1, 1.08, 0.08):
+        for j in np.arange(-1, 1.08, 0.08):
+            if pl.test([i, j]) > 0:
+                color = 'ro'
+            else:
+                color = 'bo'
+            draw2.plot(i, j, color)
+    draw2.plot([0.4, 0.4, 0.5, 0.5, 0.04], [0.4, 0.5, 0.4, 0.5, 0.04], 'ko')
+    draw2.plot([-0.4, -0.4, -0.5, -0.5, -0.04], [-0.4, -0.5, -0.4, -0.5, -0.04], 'wo')
+    draw2.axis([-1, 1, -1, 1])
+
+    for i in range(5):
+        pl.performTeaching()
+    draw3 = fig.add_subplot(333)
+    for i in np.arange(-1, 1.08, 0.08):
+        for j in np.arange(-1, 1.08, 0.08):
+            if pl.test([i, j]) > 0:
+                color = 'ro'
+            else:
+                color = 'bo'
+            draw3.plot(i, j, color)
+    draw3.plot([0.4, 0.4, 0.5, 0.5, 0.04], [0.4, 0.5, 0.4, 0.5, 0.04], 'ko')
+    draw3.plot([-0.4, -0.4, -0.5, -0.5, -0.04], [-0.4, -0.5, -0.4, -0.5, -0.04], 'wo')
+    draw3.axis([-1, 1, -1, 1])
+
+    for i in range(5):
+        pl.performTeaching()
+    draw4 = fig.add_subplot(334)
+    for i in np.arange(-1, 1.08, 0.08):
+        for j in np.arange(-1, 1.08, 0.08):
+            if pl.test([i, j]) > 0:
+                color = 'ro'
+            else:
+                color = 'bo'
+            draw4.plot(i, j, color)
+    draw4.plot([0.4, 0.4, 0.5, 0.5, 0.04], [0.4, 0.5, 0.4, 0.5, 0.04], 'ko')
+    draw4.plot([-0.4, -0.4, -0.5, -0.5, -0.04], [-0.4, -0.5, -0.4, -0.5, -0.04], 'wo')
+    draw4.axis([-1, 1, -1, 1])
+
+    for i in range(5):
+        pl.performTeaching()
+    draw5 = fig.add_subplot(335)
+    for i in np.arange(-1, 1.08, 0.08):
+        for j in np.arange(-1, 1.08, 0.08):
+            if pl.test([i, j]) > 0:
+                color = 'ro'
+            else:
+                color = 'bo'
+            draw5.plot(i, j, color)
+    draw5.plot([0.4, 0.4, 0.5, 0.5, 0.04], [0.4, 0.5, 0.4, 0.5, 0.04], 'ko')
+    draw5.plot([-0.4, -0.4, -0.5, -0.5, -0.04], [-0.4, -0.5, -0.4, -0.5, -0.04], 'wo')
+    draw5.axis([-1, 1, -1, 1])
+
+    for i in range(5):
+        pl.performTeaching()
+    draw6 = fig.add_subplot(336)
+    for i in np.arange(-1, 1.08, 0.08):
+        for j in np.arange(-1, 1.08, 0.08):
+            if pl.test([i, j]) > 0:
+                color = 'ro'
+            else:
+                color = 'bo'
+            draw6.plot(i, j, color)
+    draw6.plot([0.4, 0.4, 0.5, 0.5, 0.04], [0.4, 0.5, 0.4, 0.5, 0.04], 'ko')
+    draw6.plot([-0.4, -0.4, -0.5, -0.5, -0.04], [-0.4, -0.5, -0.4, -0.5, -0.04], 'wo')
+    draw6.axis([-1, 1, -1, 1])
+
+    for i in range(5):
+        pl.performTeaching()
+    draw7 = fig.add_subplot(337)
+    for i in np.arange(-1, 1.08, 0.08):
+        for j in np.arange(-1, 1.08, 0.08):
+            if pl.test([i, j]) > 0:
+                color = 'ro'
+            else:
+                color = 'bo'
+            draw7.plot(i, j, color)
+    draw7.plot([0.4, 0.4, 0.5, 0.5, 0.04], [0.4, 0.5, 0.4, 0.5, 0.04], 'ko')
+    draw7.plot([-0.4, -0.4, -0.5, -0.5, -0.04], [-0.4, -0.5, -0.4, -0.5, -0.04], 'wo')
+    draw7.axis([-1, 1, -1, 1])
+
+    for i in range(5):
+        pl.performTeaching()
+    draw8 = fig.add_subplot(338)
+    for i in np.arange(-1, 1.08, 0.08):
+        for j in np.arange(-1, 1.08, 0.08):
+            if pl.test([i, j]) > 0:
+                color = 'ro'
+            else:
+                color = 'bo'
+            draw8.plot(i, j, color)
+    draw8.plot([0.4, 0.4, 0.5, 0.5, 0.04], [0.4, 0.5, 0.4, 0.5, 0.04], 'ko')
+    draw8.plot([-0.4, -0.4, -0.5, -0.5, -0.04], [-0.4, -0.5, -0.4, -0.5, -0.04], 'wo')
+    draw8.axis([-1, 1, -1, 1])
+
+    for i in range(5):
+        pl.performTeaching()
+    draw9 = fig.add_subplot(339)
+    for i in np.arange(-1, 1.08, 0.08):
+        for j in np.arange(-1, 1.08, 0.08):
+            if pl.test([i, j]) > 0:
+                color = 'ro'
+            else:
+                color = 'bo'
+            draw9.plot(i, j, color)
+    draw9.plot([0.4, 0.4, 0.5, 0.5, 0.04], [0.4, 0.5, 0.4, 0.5, 0.04], 'ko')
+    draw9.plot([-0.4, -0.4, -0.5, -0.5, -0.04], [-0.4, -0.5, -0.4, -0.5, -0.04], 'wo')
+    draw9.axis([-1, 1, -1, 1])
+    plt.show()
 
 
 def createTeachingSet():
-    teachingSet.listOfElements.append(Element([0.1, 0.4], -1, "Object 1, class 1"))
-    teachingSet.listOfElements.append(Element([0.6, 0.5], -1, "Object 2, class 1"))
-    teachingSet.listOfElements.append(Element([0.4, 0.4], -1, "Object 3, class 1"))
+    teachingSet.listOfElements.append(Element([0.4, 0.4], -1, "Object 1, class 1"))
+    teachingSet.listOfElements.append(Element([0.4, 0.5], -1, "Object 2, class 1"))
+    teachingSet.listOfElements.append(Element([0.5, 0.4], -1, "Object 3, class 1"))
     teachingSet.listOfElements.append(Element([0.5, 0.5], -1, "Object 4, class 1"))
-    teachingSet.listOfElements.append(Element([0.2, 0.7], -1, "Object 5, class 1"))
-    teachingSet.listOfElements.append(Element([-0.6, -0.2], 1, "Object 1, class 2"))
+    teachingSet.listOfElements.append(Element([0.04, 0.04], -1, "Object 5, class 1"))
+    teachingSet.listOfElements.append(Element([-0.04, -0.04], 1, "Object 1, class 2"))
     teachingSet.listOfElements.append(Element([-0.5, -0.5], 1, "Object 2, class 2"))
-    teachingSet.listOfElements.append(Element([-0.8, -0.5], 1, "Object 3, class 2"))
-    teachingSet.listOfElements.append(Element([-0.7, -0.3], 1, "Object 4, class 2"))
+    teachingSet.listOfElements.append(Element([-0.4, -0.5], 1, "Object 3, class 2"))
+    teachingSet.listOfElements.append(Element([-0.4, -0.4], 1, "Object 4, class 2"))
+    teachingSet.listOfElements.append(Element([-0.5, -0.4], 1, "Object 5, class 2"))
 
 
 class TeachingSet:
@@ -47,27 +175,20 @@ class Element:
         self.comment = comment
 
     def show(self):
-        print(self.comment)
-        print("Inputs: ", self.inputs)
+        print(self.comment, end=" ")
+        print("Inputs: ", self.inputs, end=" ")
         print("Output: ", self.expectedOutput)
 
 
 class NeuralNetwork:
+    """Artificial neural network, consist of neurons."""
     def __init__(self, inputCount):
-        self.biasInput = 1
         self.inputCount = inputCount
-        self.neuronInputs = self.inputCount + self.biasInput
-        self.neuron = Neuron(self.neuronInputs)
-
-    def appendBias(self, signals):
-        result = list(signals)
-        result.append(1)
-        return result
+        self.neuron = Neuron(self.inputCount)
 
     def learn(self, teachingElement, ratio, previousResponse, previousError):
-        actualInputs = self.appendBias(teachingElement.inputs)
         self.neuron.learn(
-            actualInputs,
+            teachingElement.inputs,
             teachingElement.expectedOutput,
             ratio,
             previousResponse,
@@ -80,7 +201,7 @@ class Neuron:
 
     def __init__(self, neuronInputs):
         self.weights = []
-        self.randomize(-0.1, 0.1, neuronInputs)
+        self.randomize(-1, 1, neuronInputs)
 
     def randomize(self, min, max, inputCount):
         """Set neuron weights to random numbers between min and max."""
@@ -104,6 +225,7 @@ class Neuron:
 
 
 class ProgramLogic:
+    """Main logic of the network."""
 
     def __init__(self, teachingSet, network):
         self.teachingElementIndex = 0
@@ -115,6 +237,9 @@ class ProgramLogic:
         self.previousError = [0.]
 
     def performTeaching(self):
+        """Conduct teaching network.
+            Choose randomly element from the teaching set and teach network how to behave.
+        """
         self.teachingElementIndex = int(random() * self.teachingSet.count())
         self.teachingElement = self.teachingSet.listOfElements[self.teachingElementIndex]
         self.examinedNetwork.learn(
@@ -124,32 +249,27 @@ class ProgramLogic:
             self.previousError
             )
 
+    def test(self, inputs):
+        return self.examinedNetwork.neuron.response(inputs)
 
-
+print("Neural network with 1 non-linear neuron")
+print("Teaching Set:")
 teachingSet = TeachingSet(2, 1)
 createTeachingSet()
 teachingSet.show()
 
 network = NeuralNetwork(2)
 pl = ProgramLogic(teachingSet, network)
-for i in range(1000):
-    pl.performTeaching()
+
+print("Every next picture shows network response after 5 teaching steps.")
+for k in range(10):
+    plotting()
+    _ = input('If you want to show next pictures, close plot and enter any character, if you want to exit, enter q')
+    if _ == 'q':
+        exit()
 
 
 
-print(teachingSet.listOfElements[0].inputs)
-plt.plot(teachingSet.listOfElements[0].inputs[0], teachingSet.listOfElements[0].inputs[1], 'ro')
-plt.plot(teachingSet.listOfElements[1].inputs[0], teachingSet.listOfElements[1].inputs[1], 'ro')
-plt.plot(teachingSet.listOfElements[2].inputs[0], teachingSet.listOfElements[2].inputs[1], 'ro')
-plt.plot(teachingSet.listOfElements[3].inputs[0], teachingSet.listOfElements[3].inputs[1], 'ro')
-plt.plot(teachingSet.listOfElements[4].inputs[0], teachingSet.listOfElements[4].inputs[1], 'ro')
-plt.plot(teachingSet.listOfElements[5].inputs[0], teachingSet.listOfElements[5].inputs[1], 'bs')
-plt.plot(teachingSet.listOfElements[6].inputs[0], teachingSet.listOfElements[6].inputs[1], 'bs')
-plt.plot(teachingSet.listOfElements[7].inputs[0], teachingSet.listOfElements[7].inputs[1], 'bs')
-plt.plot(teachingSet.listOfElements[8].inputs[0], teachingSet.listOfElements[8].inputs[1], 'bs')
-plt.plot(0.1,0.1,'ro')
-plt.plot(0.12,0.12,'ro')
-plt.axis([-1, 1, -1, 1])
 
 
-plt.show()
+
