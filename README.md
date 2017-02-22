@@ -29,3 +29,9 @@ Program shows step by step how error is decreasing during learning.
 #NeuralNetwork04:
 
 Similar network to 03 one, but with 3 neurons, 5 inputs and 3 outputs each.
+
+#NeuralNetwork06:
+
+Simple non-linear neural network which consists of 1 neuron with 2 inputs and 1 output (-1 or 1).
+
+It shows graphically on 2 dimension (2 inputs) surface how network behaves during teaching.
