@@ -18,7 +18,7 @@ plt.figure(1)
 plt.scatter(points[:, 0], points[:, 1], c=types)
 distancesEuc = np.array(distance.cdist(points, points, 'euclidean'))
 distancesEuc[distancesEuc == 0] = np.nan
-distancesMan = np.array(distance.cdist(points, points, 'euclidean'))
+distancesMan = np.array(distance.cdist(points, points, 'cityblock'))
 distancesMan[distancesMan == 0] = np.nan
 
 
