@@ -1,6 +1,6 @@
 # AI
 
-#NeuralNetwork02: 
+# NeuralNetwork02: 
 
 Simple linear neural network which contains 3 neurons, 5 inputs and 1 output each.
 
@@ -18,7 +18,7 @@ Input features are :
 
 - does animal lay eggs?
 
-#NeuralNetwork03:
+# NeuralNetwork03:
 
 Simple linear neural network built from 1 neuron with 5 inputs and 1 output.
 
@@ -26,17 +26,17 @@ We are trying to teach it to recognize specified elements.
 
 Program shows step by step how error is decreasing during learning.
 
-#NeuralNetwork04:
+# NeuralNetwork04:
 
 Similar network to 03 one, but with 3 neurons, 5 inputs and 3 outputs each.
 
-#NeuralNetwork06:
+# NeuralNetwork06:
 
 Simple non-linear neural network which consists of 1 neuron with 2 inputs and 1 output (-1 or 1).
 
 It shows graphically on 2 dimension (2 inputs) surface how network behaves during teaching.
 
-#NeuralNetwork08:
+# NeuralNetwork08:
 
 Non-linear neural network built form 2 layers(1 hidden) with 2 neurons each and 2 bias-neurons.
 
