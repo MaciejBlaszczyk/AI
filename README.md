@@ -52,4 +52,21 @@ If there is positive value : 1st output = 1     2nd output = 0
 
 Simple linear gradient descent algorithm.
 
+# CurseOfDimensionality1
+
+We have a hyperball with a radius equal to 1.0 inscribed inside a hypercube with edges length equal to 2.0.
+We randomly fill the hypercube with evenly distributed points. What % of those points would be inside the hyperball, and what % outside in the corners?
+
+# CurseOfDimensionality2
+
+We have a hypercube with edges length equal to 1.0. We randomly fill it with evenly distributed points.
+What is the ratio between the standard deviation of distance between those points and the average distance between them?
+
+# KNN
+
+The task is to prepare 4 plots showing how given areas of space would be classified by the following variants of k-NN:
+* Euclidean distance,  k=1;
+* Euclidean distance, k=5;
+* Mahalanobis distance, k=1;
+* Mahalanobis distance, k=5;
 
