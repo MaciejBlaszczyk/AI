@@ -47,3 +47,9 @@ Network has 2 inputs, 2 outputs and tries to recognize whether the 1st input has
 If there is negaitve value : 1st output = 0     2nd output = 1
 
 If there is positive value : 1st output = 1     2nd output = 0
+
+# LinearGradientDescent
+
+Simple linear gradient descent algorithm.
+
+
